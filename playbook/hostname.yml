@@ -1,7 +1,6 @@
-#list of hostname
-
+# List of host
 ---
- - hosts: all
-     -tasks:
-       command: hostname
-       command: echo Hello!  
+  - hosts: all
+    tasks:
+      - command: hostname
+      - command: echo Hello !
