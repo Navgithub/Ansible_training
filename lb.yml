@@ -3,5 +3,5 @@
   - hosts: loadbalancer
     tasks:
       - name: installing nginx
-        apt: name=nginx state=present update_cacahe=yes
+        apt: name=nginx state=present update_cache=yes
      
