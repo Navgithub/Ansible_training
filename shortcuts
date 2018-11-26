@@ -1,5 +1,11 @@
 
 
+vagrant plugin install vagrant-hostmanager
+
+vagrant up
+
+vagrant ssh
+
 alias lt='ls -ltra'
 
 alias bashrc='vim ~/.bashrc'
@@ -18,3 +24,19 @@ alias db01='ssh 192.168.135.121'
 vim .bashrc
 
 sudo vim /etc/hostname
+
+
+
+vim dev
+ansible -i --list-hosts all
+
+ADD ansible.cfg
+ [defaults]
+
+ inventory = ./dev
+
+ deprecation_warnings=False
+
+
+ansible -i dev --list-hosts all
+
