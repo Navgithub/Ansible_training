@@ -1,0 +1,7 @@
+# database
+---
+  - hosts: database
+    become: true
+    tasks:
+      - name: install My-sql-server database
+        apt: name=mysql-server state=present update_cache=yes
