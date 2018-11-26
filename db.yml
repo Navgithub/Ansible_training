@@ -5,3 +5,6 @@
     tasks:
       - name: install My-sql-server database
         apt: name=mysql-server state=present update_cache=yes
+
+      - name: Ensure My-sql-server is up and running
+        service: name=mysql state=started enabled=yes
